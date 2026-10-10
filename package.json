@@ -1,0 +1,24 @@
+{
+  "name": "easyskriptfree",
+  "version": "1.0.0",
+  "description": "EasySkriptFree - darmowy edytor blokowy do Skript (Minecraft)",
+  "main": "main.js",
+  "author": "EasySkriptFree",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "pl.easyskriptfree.app",
+    "productName": "EasySkriptFree",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "src/**/*", "build/icon.ico"],
+    "win": { "target": "portable", "icon": "build/icon.ico" },
+    "portable": { "artifactName": "EasySkriptFree.exe" }
+  }
+}
