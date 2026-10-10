@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:">
+<title>EasySkriptFree</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root"></div>
+<div id="toast"></div>
+<datalist id="conds">
+  <option value='player has permission "perm"'></option>
+  <option value="player is op"></option>
+  <option value="player is sneaking"></option>
+  <option value="player's gamemode is creative"></option>
+  <option value="player has 1 diamond"></option>
+  <option value='player is in world "world"'></option>
+  <option value='message contains "text"'></option>
+  <option value="chance of 50%"></option>
+  <option value="{_x} is set"></option>
+  <option value="{_x} is greater than 10"></option>
+</datalist>
+<script src="skript.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
